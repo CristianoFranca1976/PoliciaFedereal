@@ -1,12 +1,21 @@
 * {
   box-sizing: border-box;
 }
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
 #container {
-  border: 1px solid rgb(0, 0, 255);
+  border: 1px solid rgb(249, 249, 250);
+  background-color: #777;
+  border-radius: 20px;
   display: flex;
   flex-wrap: wrap;
-  max-width: 1000px;
+  max-width: 1400px;
   padding: 15px;
+  height: 100%;
+  gap: 30px;
 }
 header {
   display: flex;
@@ -14,7 +23,6 @@ header {
   align-items: center;
   gap: 20px;
   width: 100%;
-  
 }
 .logo {
   width: auto;
@@ -29,6 +37,8 @@ header {
 .background-image {
   height: 200px;
   width: 100%;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  border-radius: 10px;
 }
 /* menu */
 section {
@@ -53,16 +63,26 @@ section {
   background-color: #777;
 }
 
-/* Style the tab content (and add height:100% for full page content) */
 .tabcontent {
   color: white;
   display: none;
   padding: 100px 20px;
   height: 100%;
 }
+#Home {
+  background-color: red;
+}
+#News {
+  background-color: green;
+}
+#Contact {
+  background-color: blue;
+}
+#About {
+  background-color: orange;
+}
 /*footer*/
 footer {
-  border: 1px solid red;
   display: flex;
   justify-content: space-between;
   width: 100%;
@@ -79,18 +99,77 @@ footer {
   height: 48px;
 }
 nav {
-  border: 1px solid red;
   display: flex;
+  justify-content: end;
+  gap: 20px;
+  width: 100%;
 }
-#Home {background-color: red;}
-#News {background-color: green;}
-#Contact {background-color: blue;}
-#About {background-color: orange;}
-@media only screen and (max-width: 800px)  {
-  header{
+.logo-link {
+  width: 48px;
+  height: 48px;
+}
+/* flip card*/
+.flip-card {
+  background-color: transparent;
+  width: 300px;
+  height: 300px;
+  perspective: 1000px;
+  border-radius: 10px;
+}
+
+.flip-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.6s;
+  transform-style: preserve-3d;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  border-radius: 10px;
+}
+
+.flip-card:hover .flip-card-inner {
+  transform: rotateY(180deg);
+}
+
+.flip-card-front,
+.flip-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  border-radius: 10px;
+}
+
+.flip-card-front {
+  background-color: #bbb;
+  color: black;
+  border-radius: 10px;
+}
+
+.flip-card-back {
+  background-color: #2980b9;
+  color: white;
+  transform: rotateY(180deg);
+  border-radius: 10px;
+}
+.img-avatar {
+  height: 300px;
+  width: 300px;
+}
+.equipe {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+@media only screen and (max-width: 800px) {
+  header {
     display: flex;
     align-items: center;
     justify-content: center;
   }
-  
 }
