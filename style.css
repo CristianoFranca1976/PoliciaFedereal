@@ -191,6 +191,7 @@ nav {
 .img-avatar {
   height: 250px;
   width: 250px;
+  border-radius: 10px;
 }
 .equipe {
   display: flex;
