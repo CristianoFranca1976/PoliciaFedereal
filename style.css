@@ -12,6 +12,7 @@ body {
   background-image: url(/assets/Screenshot\ teste.png);
   background-repeat: no-repeat;
   background-size: cover;
+  background-position: center;
   border-radius: 20px;
   display: flex;
   flex-wrap: wrap;
