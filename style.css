@@ -81,7 +81,6 @@ header {
   gap: 20px;
 }
 .recrutamento-right {
-  border: 1px solid;
   width: 300px;
   text-align: justify;
   display: flex;
@@ -173,6 +172,7 @@ section {
 footer {
   display: flex;
   justify-content: space-between;
+  align-items: center;
   width: 100%;
   padding: 15px;
   background-color: orange;
@@ -194,8 +194,8 @@ footer {
 }
 
 .logo-copyright {
-  width: 58px;
-  height: 58px;
+  width: 5vh;
+  height: 5vh;
 }
 
 nav {
@@ -207,8 +207,9 @@ nav {
 }
 
 .logo-link {
-  width: 48px;
-  height: 48px;
+  display: flex;
+  width: 4vh;
+  height: 4vh;
 }
 
 /* flip card*/
