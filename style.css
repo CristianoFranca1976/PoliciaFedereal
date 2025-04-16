@@ -229,6 +229,7 @@ nav {
   height: 250px;
   perspective: 1000px;
   border-radius: 10px;
+  cursor: pointer;
 }
 
 .flip-card-inner {
