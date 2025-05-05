@@ -216,7 +216,7 @@ footer {
   text-transform: uppercase;
   font-weight: 500;
   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-  font-size: 1.5vh;
+  font-size: 1.8vh;
 }
 .copyright {
   display: flex;
@@ -242,6 +242,7 @@ nav {
   display: flex;
   width: 4vh;
   height: 4vh;
+  border-radius: 50%;
 }
 
 /* flip card*/
